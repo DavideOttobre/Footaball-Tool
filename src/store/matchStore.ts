@@ -1,8 +1,11 @@
+
 import { create } from 'zustand';
 import type { Match } from '../types/Match';
+import { calculateEloHistory, type EloHistoryStore } from '../utils/eloCalculator';
 
 interface MatchStore {
   matches: Match[];
+  eloHistory: EloHistoryStore;
   setMatches: (matches: Match[]) => void;
   selectedLeague: string | null;
   setSelectedLeague: (league: string) => void;
@@ -18,7 +21,17 @@ interface MatchStore {
 
 export const useMatchStore = create<MatchStore>((set) => ({
   matches: [],
-  setMatches: (matches) => set({ matches }),
+  eloHistory: new Map(),
+  setMatches: (matches) => {
+    // Ordina le partite per data, un prerequisito per il calcolo ELO
+    const sortedMatches = [...matches].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+
+    // Calcola la cronologia ELO
+    const eloHistory = calculateEloHistory(sortedMatches);
+
+    // Aggiorna lo stato con le partite e la cronologia ELO calcolata
+    set({ matches: sortedMatches, eloHistory });
+  },
   selectedLeague: null,
   setSelectedLeague: (league) => set({ selectedLeague: league }),
   selectedSeason: null,
