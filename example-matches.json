@@ -1,0 +1,90 @@
+```json
+{
+  "partite": [
+    {
+      "data": "2024-01-15",
+      "squadra_casa": "Milan",
+      "squadra_trasferta": "Roma",
+      "campionato": "Serie A",
+      "paese_campionato": "Italia",
+      "paese_squadra_casa": "Italia",
+      "paese_squadra_trasferta": "Italia",
+      "stagione": "2023-24",
+      "modulo_casa": "4-3-3",
+      "modulo_trasferta": "3-5-2",
+      "gol_primo_tempo_casa": 1,
+      "gol_primo_tempo_trasferta": 0,
+      "gol_secondo_tempo_casa": 2,
+      "gol_secondo_tempo_trasferta": 1,
+      "gol_casa": 3,
+      "gol_trasferta": 1,
+      "possesso_palla_casa": 55,
+      "possesso_palla_trasferta": 45,
+      "tiri_casa": 15,
+      "tiri_trasferta": 8,
+      "tiri_porta_casa": 7,
+      "tiri_porta_trasferta": 3,
+      "tiri_fuori_casa": 8,
+      "tiri_fuori_trasferta": 5,
+      "calci_angolo_casa": 6,
+      "calci_angolo_trasferta": 4,
+      "fuorigioco_casa": 2,
+      "fuorigioco_trasferta": 3,
+      "parate_casa": 2,
+      "parate_trasferta": 4,
+      "falli_casa": 12,
+      "falli_trasferta": 14,
+      "attacchi_casa": 45,
+      "attacchi_trasferta": 35,
+      "attacchi_pericolosi_casa": 25,
+      "attacchi_pericolosi_trasferta": 18,
+      "quota_1": 1.85,
+      "quota_x": 3.50,
+      "quota_2": 4.25,
+      "gol": [
+        {
+          "squadra": "Milan",
+          "minuto": "35",
+          "risultato_corrente_casa": 1,
+          "risultato_corrente_trasferta": 0
+        },
+        {
+          "squadra": "Milan",
+          "minuto": "58",
+          "risultato_corrente_casa": 2,
+          "risultato_corrente_trasferta": 0
+        },
+        {
+          "squadra": "Roma",
+          "minuto": "72",
+          "risultato_corrente_casa": 2,
+          "risultato_corrente_trasferta": 1
+        },
+        {
+          "squadra": "Milan",
+          "minuto": "90+2",
+          "risultato_corrente_casa": 3,
+          "risultato_corrente_trasferta": 1
+        }
+      ],
+      "statistiche_giocatori": [
+        {
+          "nome_giocatore": "Giroud",
+          "gol": 2,
+          "assist": 0
+        },
+        {
+          "nome_giocatore": "Leao",
+          "gol": 1,
+          "assist": 2
+        },
+        {
+          "nome_giocatore": "Lukaku",
+          "gol": 1,
+          "assist": 0
+        }
+      ]
+    }
+  ]
+}
+```
